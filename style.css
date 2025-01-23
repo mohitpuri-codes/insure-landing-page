@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(273, 4%, 51%);
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links button {
+  padding: 10px 25px;
+  background-color: transparent;
+}
+
+.mobile-nav-links {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    padding: 40px 25px;
+  }
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .nav-links {
+    display: none;
+  }
+  hr {
+    width: 10px;
+  }
+  span {
+    border: 1px solid black;
+    padding: 10px;
+  }
+}
